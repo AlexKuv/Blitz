@@ -1,3 +1,5 @@
+@import url('aboutStyle.css');
+
 @font-face {
   font-family: 'HelveticaNeue';
   src: url('../fonts/HelveticaNeue-Medium.eot');
@@ -5,7 +7,6 @@
   font-weight: 400;
   font-style: normal;
 }
-
 body {
   margin: 0;
   font-family: 'Bebas Neue';
@@ -138,7 +139,7 @@ body {
   margin-left: 10px;
 }
 .current-title, .footer-line {
-  background: url('/img/CurentTitleBackground.png') no-repeat 100%;
+  background: url('../img/CurentTitleBackground.png') no-repeat 100%;
   width: 100%;
   height: 30px;
   text-align: center;
