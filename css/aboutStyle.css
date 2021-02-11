@@ -1,0 +1,138 @@
+.about-text {
+  width: 65%;
+}
+.about-title h2 {
+  color: #474747;
+}
+.about-title p {
+  font-family: 'HelveticaNeue';
+  color: #9e9e9e;
+  font-size: 15px;
+}
+.line {
+  height: 5px;
+  background: url('../img/HeaderBackground.png')100%;
+  width: 100%;
+}
+.about-item h4 {
+  color: #474747;
+  font-size: 20px;
+}
+.about-item p {
+  color: #9e9d9d;
+  font-size: 15px;
+  font-family: 'HelveticaNeue';
+}
+.about {
+  display: flex;
+  margin-top: 30px;
+}
+.about-item:first-child {
+  margin-left: 0;
+}
+.about-item {
+  margin-left: 15px;
+  flex-basis: 33%;
+}
+.staff {
+  margin-top: 50px;
+  display: flex;
+}
+.staff-item img {
+  width: 100%;
+}
+.staff-item {
+  margin-left: 55px;
+}
+.staff-item:first-child {
+  margin-left: 0px;
+}
+.staff-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.name {
+  color: #474747;
+  font-size: 25px;
+  margin: 10px 0px 0px 0px;
+}
+.post {
+  color: #949393;
+  font-size: 20px;
+  margin: 0;
+}
+.staff-number {
+  color: #515151;
+  font-size: 20px;
+}
+.staff-description {
+  font-family: 'HelveticaNeue';
+  color: #5d5d5d;
+}
+/* адаптив */
+@media(min-width: 2560px) {
+  .about-section {
+    margin-top: 120px;
+  }
+  .about-text h2 {
+    font-size: 60px;
+    margin-bottom: 0;
+  }
+  .about-text p {
+    font-size: 25px;
+  }
+  .about-item h4 {
+    font-size: 45px;
+  }
+  .about-item p {
+    font-size: 25px;
+  }
+  .name {
+    font-size: 45px;
+  }
+  .post {
+    font-size: 45px;
+  }
+  .staff-number {
+    font-size: 45px;
+  }
+  .staff-description {
+    font-size: 30px;
+  }
+}
+@media (max-width: 769px) {
+  .name {
+    font-size: 25px;
+  }
+  .post {
+    font-size: 15px;
+  }
+  .staff-number {
+    font-size: 15px;
+  }
+}
+@media (max-width: 426px) {
+  .about {
+    flex-wrap: wrap;
+  }
+  .about-item {
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+  .staff {
+    flex-wrap: wrap;
+  }
+  .staff-item {
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+}
+@media (max-width: 376px) {
+  .about-section {
+    margin-top: 290px;
+  }
+  .staff-item {
+    margin-top: 25px;
+  }
+}
