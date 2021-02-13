@@ -1,4 +1,5 @@
 @import url('aboutStyle.css');
+@import url('projectsStyle.css');
 
 @font-face {
   font-family: 'HelveticaNeue';
@@ -128,6 +129,9 @@ body {
   font-family: 'HelveticaNeue';
   font-size: 14px;
   color: #717171;
+}
+.categories {
+  margin-top: 0;
 }
 .project-footer img {
   height: 15px;

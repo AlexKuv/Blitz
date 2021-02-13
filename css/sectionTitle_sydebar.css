@@ -4,36 +4,15 @@
   justify-content: space-between;
 }
 .content {
-  flex-basis: 65%;
+  flex-basis: 70%;
 }
-.nav-menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: relative;
-  margin-top: 20px;
-}
-.nav-menu li {
-  float: left;
-  margin-left: 5px;
-  border-right: 2px solid #474747;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.nav-menu a {
-  font-size: 20px;
-  text-decoration: none;
-  color: #474747;
-}
-
-
-
-
 /* стили сайдбара */
 .sidebar {
-  flex-basis: 30%;
+  flex-basis: 25%;
   margin-top: 64px;
+}
+.sidebar h2 {
+  color: #474747;
 }
 .sidebar h4 {
   color: #464646;
@@ -56,10 +35,14 @@
 .twitter-widget span {
   color: #bababa;
 }
+.tweet {
+  margin-bottom: 0;
+}
 .tweet-time {
   color: #999999;
   font-family: 'HelveticaNeue';
   font-size: 12px;
+  margin-top: 0;
 }
 /* Стили для  заголовка страниц*/
 .text {
@@ -84,12 +67,58 @@
      font-size: 60px;
      margin-bottom: 0;
    }
-   .text p {
+   .text p,
+   .sidebar-title p {
      font-size: 25px;
    }
+   .sidebar {
+     margin-top: 86px;
+   }
+   .sidebar-title h2{
+     font-size: 60px;
+   }
+   .categories h4,
+   .twitter-widget h4 {
+     font-size: 50px;
+   }
+   .categories-link {
+     font-size: 40px;
+   }
+   .tweet {
+     font-size: 35px;
+   }
+   .tweet-time {
+     font-size: 25px;
+   }
+   .follow {
+     font-size: 30px;
+   }
+}
+@media (max-width: 1440px) {
+  .sidebar {
+    margin-top: 66px;
+  }
+}
+@media (max-width: 768px) {
+  .content {
+    flex-basis: 65%;
+  }
+  .sidebar {
+    flex-basis: 30%;
+    margin-top: 102px;
+  }
 }
 @media (max-width:426px) {
   .title {
     padding-top: 10px;
+  }
+  .wrap-container {
+    flex-wrap: wrap;
+  }
+  .content {
+    flex-basis: 100%;
+  }
+  .sidebar {
+    flex-basis: 100%;
   }
 }
