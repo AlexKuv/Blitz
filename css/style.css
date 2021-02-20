@@ -1,5 +1,6 @@
 @import url('aboutStyle.css');
 @import url('projectsStyle.css');
+@import url('postStyle.css');
 
 @font-face {
   font-family: 'HelveticaNeue';
@@ -11,7 +12,7 @@
 body {
   margin: 0;
   font-family: 'Bebas Neue';
-  background-color: #fefefe;
+  background: url('../img/Background.png');
 }
 .container {
   width: 80%;
