@@ -1,0 +1,35 @@
+.intro p {
+  font-family: 'HelveticaNeue';
+  color: #525252;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form input,
+.message {
+  margin-top: 10px;
+  background-color: #fafafa;
+  border: 1px solid #eeeeee;
+}
+.size {
+  padding: 15px 30px 15px 15px;
+  width: 35%;
+}
+.message {
+  padding-bottom: 12rem;
+  padding-top: 1rem;
+  padding-left: 15px;
+  width: 65%;
+}
+.form-btn {
+  border: none;
+  background-color: #fff;
+  margin-top: 15px;
+  width: 130px;
+  color: #474747;
+  font-size: 25px;
+}
+.form-btn img {
+  width: 22%;
+}
