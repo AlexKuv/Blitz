@@ -1,0 +1,1 @@
+(()=>{"use strict";!function(){document.querySelector(".slider-content");var e=document.querySelectorAll(".slider-item"),t=document.querySelectorAll(".dash"),n=0,c=function(e,t,n){e[t].classList.remove(n)},o=function(e,t,n){e[t].classList.add(n)};setInterval((function(){c(e,n,"open"),c(t,n,"active"),++n>=e.length&&(n=0),o(e,n,"open"),o(t,n,"active")}),3e3)}()})();
