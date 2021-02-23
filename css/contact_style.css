@@ -23,13 +23,44 @@
   width: 65%;
 }
 .form-btn {
+  padding: 0;
   border: none;
   background-color: #fff;
   margin-top: 15px;
-  width: 130px;
+  width: 100px;
   color: #474747;
-  font-size: 25px;
+  font-size: 22px;
 }
 .form-btn img {
-  width: 22%;
+  width: 25%;
+}
+
+@media (min-width: 2560px) {
+  input,
+  textarea::-webkit-input-placeholder {
+    font-size: 25px;
+  }
+  .message {
+    font-size: 25px;
+  }
+  .intro p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .size {
+    width: 50%;
+  }
+  .message {
+    width: 90%;
+  }
+}
+@media (max-width: 320px) {
+  .size {
+    width: 80%;
+  }
+  .form-btn {
+    font-size: 20px;
+  }
 }
