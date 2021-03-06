@@ -32,7 +32,6 @@
 
         filter(target.dataset.category, projectPage)
 
-      
       });
   });
 
