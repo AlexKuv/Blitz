@@ -1,10 +1,8 @@
   const projectsTabs = () => {
 
-  if(document.location.pathname !== '/projects.html' || 
-  document.location.pathname !== '/projects.html#') {
+  if(!~document.location.pathname.indexOf('projects')) {
     return;
   }
-
   const navMenu = document.querySelector('.nav-menu'),
   navLi = navMenu.querySelectorAll('li>a'),
   projectPage = document.querySelectorAll('.project-page');
