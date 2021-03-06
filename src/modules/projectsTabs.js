@@ -1,6 +1,7 @@
   const projectsTabs = () => {
 
-  if(document.location.pathname !== '/projects.html') {
+  if(document.location.pathname !== '/projects.html' || 
+  document.location.pathname !== '/projects.html#') {
     return;
   }
 
