@@ -7,7 +7,8 @@ const slider = () => {
   let currentSlide = 0,
   interval;
 
-  if(document.location.pathname !== '/index.html' && document.location.pathname !== '/') {
+  if(!~document.location.pathname.indexOf('index') && 
+  !~document.location.pathname.indexOf('/')) {
     return;
   }
 
