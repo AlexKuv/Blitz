@@ -1,5 +1,4 @@
 const slider = () => {
-
   const sliderContent = document.querySelector('.slider-content'),
   slide = document.querySelectorAll('.slider-item'),
   dash = document.querySelectorAll('.dash'),
@@ -8,7 +7,9 @@ const slider = () => {
   let currentSlide = 0,
   interval;
 
-
+  if(document.location.pathname !== '/index.html' && document.location.pathname !== '/') {
+    return;
+  }
 
   const prevSlide = (elem, index, strClass) => {
     elem[index].classList.remove(strClass);
@@ -33,13 +34,13 @@ const slider = () => {
   };
 
   const startSlide = () => {
-    interval = setInterval(autoPlaySlide, 3000);
+    interval = setInterval(autoPlaySlide, 2000);
   };
-
   const stopSlide = () => {
     clearInterval(interval);
   };
 
+ 
   sliderContent.addEventListener('click', (e) => {
     e.preventDefault();
     let target = e.target;
