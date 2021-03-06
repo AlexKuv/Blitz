@@ -8,7 +8,7 @@ const slider = () => {
   interval;
 
   if(!~document.location.pathname.indexOf('index') && 
-  !~document.location.pathname.indexOf('/')) {
+  !~document.location.pathname.indexOf('Blitz')) {
     return;
   }
 
