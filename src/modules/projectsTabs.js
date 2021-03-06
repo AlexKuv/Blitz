@@ -1,11 +1,13 @@
   const projectsTabs = () => {
 
-  if(!~document.location.pathname.indexOf('projects')) {
+
+    if(!document.getElementById('projects')) {
     return;
-  }
-  const navMenu = document.querySelector('.nav-menu'),
-  navLi = navMenu.querySelectorAll('li>a'),
-  projectPage = document.querySelectorAll('.project-page');
+    }
+
+  const navMenu = document.querySelector('.nav-menu');
+  const navLi = navMenu.querySelectorAll('li>a');
+  const projectPage = document.querySelectorAll('.project-page');
 
   const filter = (category, items) => {
     

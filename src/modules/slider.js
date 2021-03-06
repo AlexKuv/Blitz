@@ -7,8 +7,7 @@ const slider = () => {
   let currentSlide = 0,
   interval;
 
-  if(!~document.location.pathname.indexOf('index') && 
-  !~document.location.pathname.indexOf('Blitz')) {
+  if(!document.getElementById('home')) {
     return;
   }
 
