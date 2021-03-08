@@ -58,8 +58,10 @@ const sendForm = () => {
     .then((response) => {
       if(response.status === 200) {
         formUser.querySelectorAll('input').forEach(i => i.value = '');
+        formUser.querySelector('.message').value = '';
       } else {
         formUser.querySelectorAll('input').forEach(i => i.value = '');
+        formUser.querySelector('.message').value = '';
         console.error(response.status);
       }
     })
