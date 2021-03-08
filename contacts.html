@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Contacts</title>
 </head>
-<body>
+<body id="contacts">
 
   <div class="container">
     <header class="header">
@@ -58,11 +58,11 @@
           </div>
           <!-- intro -->
           <div class="form-block">
-            <form id="form" name="user_form" class="form">
+            <form id="form-user" name="user_form" class="form">
             <input type="text" placeholder="First Name" class="size">
             <input type="text" placeholder="Last Name" class="size">
             <input type="email" placeholder="Email adress" class="size">
-            <textarea placeholder="Message" class="message"></textarea>
+            <input placeholder="Message" class="message"></input>
             <!-- <input type="text" placeholder="Message" class="message"> -->
             <button class="form-btn" type="submit">
               <img src="img/more icon.png" alt="">
@@ -122,5 +122,7 @@
     <!-- footer -->
   </div>
   <!-- container -->
+
+  <script src="dist/bundle.js"></script>
 </body>
 </html>

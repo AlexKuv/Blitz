@@ -1,6 +1,5 @@
   const projectsTabs = () => {
 
-
     if(!document.getElementById('projects')) {
     return;
     }

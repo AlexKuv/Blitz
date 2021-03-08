@@ -7,7 +7,7 @@ const slider = () => {
   let currentSlide = 0,
   interval;
 
-  if(document.getElementById('projects')) {
+  if(document.getElementById('projects') || document.getElementById('contacts')) {
     return;
   }
 
@@ -34,12 +34,11 @@ const slider = () => {
   };
 
   const startSlide = () => {
-    interval = setInterval(autoPlaySlide, 2000);
+    interval = setInterval(autoPlaySlide, 3000);
   };
   const stopSlide = () => {
     clearInterval(interval);
   };
-
  
   sliderContent.addEventListener('click', (e) => {
     e.preventDefault();
@@ -61,7 +60,6 @@ const slider = () => {
       });
     }
 
-
     nextSlide(slide, currentSlide, 'open');
     nextSlide(dash, currentSlide, 'active');
     nextSlide(slideDescription, currentSlide , 'description-active')
@@ -81,15 +79,8 @@ const slider = () => {
     }
   });
 
-
-
-
-
-
-
   startSlide();
 
 };
 
 export default slider;
-
