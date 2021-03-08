@@ -30,8 +30,6 @@ const sendForm = () => {
           elem.value = elem.value.replace(/[^а-яА-Яa-zA-Z]/,  '');
         }
         
-        
-          
       });
     });
 
