@@ -65,6 +65,9 @@ const sendForm = () => {
         console.error(response.status);
       }
     })
+    .catch((error) => {
+      console.error(error);
+    })
   });
 
 };
