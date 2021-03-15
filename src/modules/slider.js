@@ -7,7 +7,7 @@ const slider = () => {
   let currentSlide = 0,
   interval;
 
-  if(document.getElementById('projects') || document.getElementById('contacts')) {
+  if(document.getElementById('projects') || document.getElementById('contacts') || document.getElementById('about') || document.getElementById('blog')) {
     return;
   }
 
