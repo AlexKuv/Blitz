@@ -355,6 +355,7 @@ body {
 @media(max-width:426px) {
   .header {
     flex-wrap: wrap;
+    margin-bottom: 75px;
     margin-top: 25px;
   }
   .header img {
@@ -393,6 +394,9 @@ body {
   }
 }
 @media(max-width:376px) {
+  .header {
+    margin-bottom: auto;
+  }
  .hamburger {
    display: block;
  }
